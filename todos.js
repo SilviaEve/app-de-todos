@@ -7,3 +7,15 @@ var todos = [
     'Estudar JavaScript',
     'Acessar comunidade da Rocketseat'
 ];
+
+function renderTodos(){
+    for (todo of todos) {
+        var todosElement = document.createElement('li');
+        var todoText = document.createTextNode(todo);
+
+        todosElement.appendChild(todoText);
+        listElement.appendChild(todosElement);
+    }
+}
+
+renderTodos();
